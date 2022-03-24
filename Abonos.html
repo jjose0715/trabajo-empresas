@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Trabajos</a>
+              <a class="navbar-brand" href="#">Abonos</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -28,13 +28,14 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Trabajos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="empandas.html">Empanadas</a></li>
                       <li><a class="dropdown-item" href="rappi.html">Rappi</a></li>
                       <li><a class="dropdown-item" href="abonos.html">Abonos</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="empanadas.html">Empanaderia</a></li>
+                      <li><a class="dropdown-item" href="#">Nada</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -49,7 +50,7 @@
             </div>
           </nav>
     </header>
-    <main>
+    <main class="text-black mt-5">
         <center><h1>Abonos</h1></center>
         <div class="container">
             <img src="img/Abono1.jpg" alt="El machetero" class="w-100">
@@ -60,36 +61,43 @@
                 <div class="col-6">
                     <form action=""class="mt-5 me-5">
                         <div class="container">
-                            <p>Seleccione su tipo de empanda</p>
+                            <h6 class="text-center">Seleccione su tribuna</h6>
                         </div>
                         
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">empanada de carne</option>
-                            <option value="2">empanada de pollo</option>
-                            <option value="3">empanada de papa</option>
-                            <option value="4">empanada de carne que parece de pollo pero sabe a papa</option>
-                            <option value="5">empanada picante que se ve dulce pero sabe salado</option>
-                            <option value="6">empanada de pescado hecha de gallina con sabor a cerdo</option>
+                        <select id="tribunas" class="form-select mb-3 " aria-label="Default select example">
+                            <option selected>Tribunas</option>
+                            <option value="1">Tribuna Oriental</option>
+                            <option value="2">Tribuna occidental</option>
+                            <option value="3">Tribuna norte</option>
+                            <option value="4">Tribuna sur</option>
                         </select>
+                        <p class="text-center">Las tribunas valen 44000</p>
 
-                        <div class="mb-3 mt-5">
-                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="Nombre" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Pon tu nombre completo aca.</div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Cedula</label>
-                            <input type="number" class="form-control" id="Cedula" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Poner tu cedula pls.</div>
+                            <input type="number" class="form-control" id="cedula" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="nombres" aria-describedby="emailHelp">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Correo</label>
                             <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary mb-5">enviar</button>
                     </form>
                 </div>
             </div>
@@ -98,6 +106,9 @@
     <footer>
 
     </footer>
+    <script src="Abonos.js">
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
