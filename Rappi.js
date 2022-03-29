@@ -14,31 +14,51 @@ function escuchar(event){
     if (productos=="Hamburguesa"){
         let producto= 5000;
         let valor=producto*cantidad;
-        alert("El total por empanadas es $"+valor)
+        alert("El total por Producto es $"+valor)
     }
     if (productos=="Perro"){
         let producto= 2500;
         let valor=producto*cantidad;
-        alert("El total por empanadas es $"+valor)
+        alert("El total por producto es $"+valor)
     }
     if (productos=="Ensalada"){
         let producto= 1300;
         let valor=producto*cantidad;
-        alert("El total por empanadas es $"+valor)
+        alert("El total por producto es $"+valor)
     }
     if (productos=="Sandwich"){
         let producto= 2000;
         let valor=producto*cantidad;
-        alert("El total por empanadas es $"+valor)
+        alert("El total por producto es $"+valor)
     }
     if (productos=="Taco"){
         let producto= 1500;
         let valor=producto*cantidad;
-        alert("El total por empanadas es $"+valor)
+        alert("El total por producto es $"+valor)
     }
     if (productos=="Comida china"){
         let producto= 4200;
         let valor=producto*cantidad;
-        alert("El total por empanadas es $"+valor)
+        alert("El total por producto es $"+valor)
+    }
+    if (productos=="Papel"){
+        let producto= 8000;
+        let valor=producto*cantidad;
+        alert("El total por producto es $"+valor)
+    }
+    if (productos=="Pizza"){
+        let producto= 5200;
+        let valor=producto*cantidad;
+        alert("El total por producto es $"+valor)
+    }
+    if (productos=="Helado"){
+        let producto= 4000;
+        let valor=producto*cantidad;
+        alert("El total por producto es $"+valor)
+    }
+    if (productos=="Papas"){
+        let producto= 3500;
+        let valor=producto*cantidad;
+        alert("El total por producto es $"+valor)
     }
 }
